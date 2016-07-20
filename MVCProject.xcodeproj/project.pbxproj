@@ -60,6 +60,7 @@
 		7FA0CCA51D3F68130004919A /* UITabBar+RangeClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+RangeClick.m"; sourceTree = "<group>"; };
 		7FA0CCAD1D3F72F50004919A /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		7FA0CCAE1D3F72F50004919A /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		7FA0CCB11D3F83D50004919A /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +215,7 @@
 		7FA0CCA21D3F67F90004919A /* Expand */ = {
 			isa = PBXGroup;
 			children = (
-				7FA0CCA71D3F68A10004919A /* Macro */,
+				7FA0CCB01D3F83630004919A /* Macro(宏) */,
 				7FA0CCA31D3F68130004919A /* Category */,
 			);
 			path = Expand;
@@ -227,13 +228,6 @@
 				7FA0CCA51D3F68130004919A /* UITabBar+RangeClick.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		7FA0CCA71D3F68A10004919A /* Macro */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Macro;
 			sourceTree = "<group>";
 		};
 		7FA0CCA81D3F69020004919A /* Global(全局) */ = {
@@ -249,6 +243,14 @@
 			children = (
 			);
 			path = "Image(图片)";
+			sourceTree = "<group>";
+		};
+		7FA0CCB01D3F83630004919A /* Macro(宏) */ = {
+			isa = PBXGroup;
+			children = (
+				7FA0CCB11D3F83D50004919A /* Macros.h */,
+			);
+			path = "Macro(宏)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
