@@ -185,6 +185,8 @@
 		7FD3F1E71D41C63A00B46D34 /* NSObject+MKBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F1DA1D41C63A00B46D34 /* NSObject+MKBlockTimer.m */; };
 		7FD3F1E81D41C63A00B46D34 /* NSObject+Reflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F1DC1D41C63A00B46D34 /* NSObject+Reflection.m */; };
 		7FD3F1E91D41C63A00B46D34 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F1DE1D41C63A00B46D34 /* NSObject+Runtime.m */; };
+		7FD3F1EE1D4203B700B46D34 /* JWLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F1ED1D4203B700B46D34 /* JWLaunchAd.m */; };
+		7FD3F1F11D4203D500B46D34 /* UIImageView+JWWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F1F01D4203D500B46D34 /* UIImageView+JWWebCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,7 +228,6 @@
 		7FA0CCAD1D3F72F50004919A /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		7FA0CCAE1D3F72F50004919A /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		7FA0CCB11D3F83D50004919A /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
-		7FD3EEC01D41C22600B46D34 /* ThirdKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdKey.h; sourceTree = "<group>"; };
 		7FD3EFC71D41C30700B46D34 /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
 		7FD3EFC81D41C30700B46D34 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
 		7FD3EFCA1D41C30700B46D34 /* UIApplication+ApplicationSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ApplicationSize.h"; sourceTree = "<group>"; };
@@ -563,6 +564,13 @@
 		7FD3F1DC1D41C63A00B46D34 /* NSObject+Reflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Reflection.m"; sourceTree = "<group>"; };
 		7FD3F1DD1D41C63A00B46D34 /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
 		7FD3F1DE1D41C63A00B46D34 /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		7FD3F1EC1D4203B700B46D34 /* JWLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWLaunchAd.h; sourceTree = "<group>"; };
+		7FD3F1ED1D4203B700B46D34 /* JWLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLaunchAd.m; sourceTree = "<group>"; };
+		7FD3F1EF1D4203D500B46D34 /* UIImageView+JWWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JWWebCache.h"; sourceTree = "<group>"; };
+		7FD3F1F01D4203D500B46D34 /* UIImageView+JWWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JWWebCache.m"; sourceTree = "<group>"; };
+		7FD3F1F21D4205A800B46D34 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7FD3F1F41D420B3B00B46D34 /* NotificationKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationKey.h; sourceTree = "<group>"; };
+		7FD3F1F51D420BE800B46D34 /* ThirdKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdKey.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -717,6 +725,8 @@
 		7FA0CCA21D3F67F90004919A /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				7FD3F1F31D420B0B00B46D34 /* Const(常量) */,
+				7FD3F1EA1D42037000B46D34 /* Tool */,
 				7FA0CCB01D3F83630004919A /* Macro(宏) */,
 				7FA0CCA31D3F68130004919A /* Category */,
 			);
@@ -737,6 +747,7 @@
 			isa = PBXGroup;
 			children = (
 				7FA0CC651D3F5F2F0004919A /* LaunchScreen.storyboard */,
+				7FD3F1F21D4205A800B46D34 /* PrefixHeader.pch */,
 			);
 			path = "Global(全局)";
 			sourceTree = "<group>";
@@ -752,7 +763,6 @@
 			isa = PBXGroup;
 			children = (
 				7FA0CCB11D3F83D50004919A /* Macros.h */,
-				7FD3EEC01D41C22600B46D34 /* ThirdKey.h */,
 			);
 			path = "Macro(宏)";
 			sourceTree = "<group>";
@@ -958,6 +968,8 @@
 		7FD3F02C1D41C30700B46D34 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
+				7FD3F1EF1D4203D500B46D34 /* UIImageView+JWWebCache.h */,
+				7FD3F1F01D4203D500B46D34 /* UIImageView+JWWebCache.m */,
 				7FD3F02D1D41C30700B46D34 /* UIImageView+Addition.h */,
 				7FD3F02E1D41C30700B46D34 /* UIImageView+Addition.m */,
 				7FD3F02F1D41C30700B46D34 /* UIImageView+BetterFace.h */,
@@ -1402,6 +1414,32 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		7FD3F1EA1D42037000B46D34 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				7FD3F1EB1D4203A100B46D34 /* LaunchAd(启动页广告) */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		7FD3F1EB1D4203A100B46D34 /* LaunchAd(启动页广告) */ = {
+			isa = PBXGroup;
+			children = (
+				7FD3F1EC1D4203B700B46D34 /* JWLaunchAd.h */,
+				7FD3F1ED1D4203B700B46D34 /* JWLaunchAd.m */,
+			);
+			path = "LaunchAd(启动页广告)";
+			sourceTree = "<group>";
+		};
+		7FD3F1F31D420B0B00B46D34 /* Const(常量) */ = {
+			isa = PBXGroup;
+			children = (
+				7FD3F1F51D420BE800B46D34 /* ThirdKey.h */,
+				7FD3F1F41D420B3B00B46D34 /* NotificationKey.h */,
+			);
+			path = "Const(常量)";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1602,6 +1640,7 @@
 				7FD3F17B1D41C52600B46D34 /* NSDate+Extension.m in Sources */,
 				7FD3F1341D41C30700B46D34 /* UITextField+History.m in Sources */,
 				7FD3F1061D41C30700B46D34 /* UIImage+GIF.m in Sources */,
+				7FD3F1F11D4203D500B46D34 /* UIImageView+JWWebCache.m in Sources */,
 				7FD3F1091D41C30700B46D34 /* UIImage+PDF.m in Sources */,
 				7FD3F0F51D41C30700B46D34 /* UIColor+Random.m in Sources */,
 				7FD3F12B1D41C30700B46D34 /* UISplitViewController+QuickAccess.m in Sources */,
@@ -1670,6 +1709,7 @@
 				7FD3F1281D41C30700B46D34 /* UIScrollView+EmptyDataSet.m in Sources */,
 				7FD3F1A81D41C58600B46D34 /* NSString+Encrypt.m in Sources */,
 				7FD3F13C1D41C30700B46D34 /* UIView+Constraints.m in Sources */,
+				7FD3F1EE1D4203B700B46D34 /* JWLaunchAd.m in Sources */,
 				7FD3F15B1D41C30700B46D34 /* UIWebVIew+SwipeGesture.m in Sources */,
 				7FD3F1C71D41C62F00B46D34 /* NSDateFormatter+Make.m in Sources */,
 				7FD3F1AC1D41C58600B46D34 /* NSString+Pinyin.m in Sources */,
@@ -1848,6 +1888,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "/Users/GJW/Desktop/Project/MVCProject/MVCProject/Resource/Global(全局)/PrefixHeader.pch";
 				INFOPLIST_FILE = MVCProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JW.MVCProject;
@@ -1859,6 +1901,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "/Users/GJW/Desktop/Project/MVCProject/MVCProject/Resource/Global(全局)/PrefixHeader.pch";
 				INFOPLIST_FILE = MVCProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JW.MVCProject;

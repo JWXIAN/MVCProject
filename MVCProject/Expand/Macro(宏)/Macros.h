@@ -42,8 +42,8 @@
 #define GetViewY(view)      view.frame.origin.y
 
 // MainScreen Height&Width
-#define SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
-#define SCREENH_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width   [UIScreen mainScreen].bounds.size.width
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
 
 // MainScreen bounds
 #define Main_Screen_Bounds [[UIScreen mainScreen] bounds]
