@@ -12,9 +12,9 @@
 @end
 
 #define kBarTintColor   [UIColor whiteColor]
-#define kTintColor      [UIColor blackColor]
+#define kTintColor      [UIColor grayColor]
 #define kTitleColor     [UIColor whiteColor]
-#define kItemTextColor  [UIColor blackColor]
+#define kItemTextColor  [UIColor grayColor]
 #define kItemTextFont   13
 @implementation NavigationController
 
@@ -32,6 +32,7 @@
     [super didReceiveMemoryWarning];
 }
 + (void)initialize{
+    
     // 设置整个项目所有item的主题样式
     UIBarButtonItem *item = [UIBarButtonItem appearance];
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];

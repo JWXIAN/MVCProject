@@ -20,7 +20,7 @@
     [super viewDidLoad];
     NSArray *imageArr = @[@"主页", @"信息", @"搜索", @"个人"];
     for (int i=0; i<imageArr.count; i++) {
-        HomeVC *vc = [HomeVC new];
+        HomeVC *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"HomeVC"];
         [self addChildVc:vc title:nil image:imageArr[i] selectedImage:[imageArr[i] stringByAppendingString:@"_select"]];
     }
 }
