@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F6C2E081D45BC660045728B /* UIImageView+JWWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C2E071D45BC660045728B /* UIImageView+JWWebCache.m */; };
 		7FA0CC591D3F5F2F0004919A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0CC581D3F5F2F0004919A /* main.m */; };
 		7FA0CC621D3F5F2F0004919A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA0CC601D3F5F2F0004919A /* Main.storyboard */; };
 		7FA0CC641D3F5F2F0004919A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA0CC631D3F5F2F0004919A /* Assets.xcassets */; };
@@ -185,7 +186,6 @@
 		7FD3F1E81D41C63A00B46D34 /* NSObject+Reflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F1DC1D41C63A00B46D34 /* NSObject+Reflection.m */; };
 		7FD3F1E91D41C63A00B46D34 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F1DE1D41C63A00B46D34 /* NSObject+Runtime.m */; };
 		7FD3F1EE1D4203B700B46D34 /* JWLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F1ED1D4203B700B46D34 /* JWLaunchAd.m */; };
-		7FD3F1F11D4203D500B46D34 /* UIImageView+JWWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F1F01D4203D500B46D34 /* UIImageView+JWWebCache.m */; };
 		7FD3F1FC1D4217A700B46D34 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F1FB1D4217A700B46D34 /* HomeVC.m */; };
 		7FD3F2031D42198200B46D34 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F2011D42198200B46D34 /* HomeCell.m */; };
 		7FD3F2041D42198200B46D34 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD3F2021D42198200B46D34 /* HomeCell.xib */; };
@@ -209,6 +209,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F6C2E061D45BC660045728B /* UIImageView+JWWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JWWebCache.h"; sourceTree = "<group>"; };
+		7F6C2E071D45BC660045728B /* UIImageView+JWWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JWWebCache.m"; sourceTree = "<group>"; };
 		7FA0CC541D3F5F2F0004919A /* MVCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA0CC581D3F5F2F0004919A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FA0CC611D3F5F2F0004919A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -566,8 +568,6 @@
 		7FD3F1DE1D41C63A00B46D34 /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
 		7FD3F1EC1D4203B700B46D34 /* JWLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWLaunchAd.h; sourceTree = "<group>"; };
 		7FD3F1ED1D4203B700B46D34 /* JWLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLaunchAd.m; sourceTree = "<group>"; };
-		7FD3F1EF1D4203D500B46D34 /* UIImageView+JWWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JWWebCache.h"; sourceTree = "<group>"; };
-		7FD3F1F01D4203D500B46D34 /* UIImageView+JWWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JWWebCache.m"; sourceTree = "<group>"; };
 		7FD3F1F21D4205A800B46D34 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7FD3F1F51D420BE800B46D34 /* ThirdKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdKey.h; sourceTree = "<group>"; };
 		7FD3F1FA1D4217A700B46D34 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
@@ -605,7 +605,6 @@
 		7FA0CC4B1D3F5F2F0004919A = {
 			isa = PBXGroup;
 			children = (
-				7FA0CCA21D3F67F90004919A /* Expand */,
 				7FA0CC561D3F5F2F0004919A /* MVCProject */,
 				7FA0CC701D3F5F2F0004919A /* MVCProjectTests */,
 				7FA0CC7B1D3F5F2F0004919A /* MVCProjectUITests */,
@@ -626,6 +625,7 @@
 		7FA0CC561D3F5F2F0004919A /* MVCProject */ = {
 			isa = PBXGroup;
 			children = (
+				7FA0CCA21D3F67F90004919A /* Expand */,
 				7FA0CC8E1D3F634A0004919A /* Other */,
 				7FA0CC8D1D3F63140004919A /* Lib */,
 				7FA0CC8B1D3F61E60004919A /* Resource */,
@@ -735,8 +735,7 @@
 				7FA0CCB01D3F83630004919A /* Macro(宏) */,
 				7FA0CCA31D3F68130004919A /* Category */,
 			);
-			name = Expand;
-			path = MVCProject/Expand;
+			path = Expand;
 			sourceTree = "<group>";
 		};
 		7FA0CCA31D3F68130004919A /* Category */ = {
@@ -974,8 +973,8 @@
 		7FD3F02C1D41C30700B46D34 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
-				7FD3F1EF1D4203D500B46D34 /* UIImageView+JWWebCache.h */,
-				7FD3F1F01D4203D500B46D34 /* UIImageView+JWWebCache.m */,
+				7F6C2E061D45BC660045728B /* UIImageView+JWWebCache.h */,
+				7F6C2E071D45BC660045728B /* UIImageView+JWWebCache.m */,
 				7FD3F02D1D41C30700B46D34 /* UIImageView+Addition.h */,
 				7FD3F02E1D41C30700B46D34 /* UIImageView+Addition.m */,
 				7FD3F02F1D41C30700B46D34 /* UIImageView+BetterFace.h */,
@@ -1615,6 +1614,7 @@
 				7FD3F0FC1D41C30700B46D34 /* UIFont+WDCustomLoader.m in Sources */,
 				7FD3F1AB1D41C58600B46D34 /* NSString+MIME.m in Sources */,
 				7FD3F0F71D41C30700B46D34 /* UIControl+ActionBlocks.m in Sources */,
+				7F6C2E081D45BC660045728B /* UIImageView+JWWebCache.m in Sources */,
 				7FD3F1351D41C30700B46D34 /* UITextField+Select.m in Sources */,
 				7FD3F1421D41C30700B46D34 /* UIView+Frame.m in Sources */,
 				7FD3F1AF1D41C58600B46D34 /* NSString+Ruby.m in Sources */,
@@ -1673,7 +1673,6 @@
 				7FD3F17B1D41C52600B46D34 /* NSDate+Extension.m in Sources */,
 				7FD3F1341D41C30700B46D34 /* UITextField+History.m in Sources */,
 				7FD3F1061D41C30700B46D34 /* UIImage+GIF.m in Sources */,
-				7FD3F1F11D4203D500B46D34 /* UIImageView+JWWebCache.m in Sources */,
 				7FD3F1091D41C30700B46D34 /* UIImage+PDF.m in Sources */,
 				7FD3F0F51D41C30700B46D34 /* UIColor+Random.m in Sources */,
 				7FD3F12B1D41C30700B46D34 /* UISplitViewController+QuickAccess.m in Sources */,
