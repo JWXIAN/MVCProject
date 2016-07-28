@@ -16,28 +16,34 @@
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [TabBarController new];
-    //启动页广告
-    [self launchAd];
-    [self.window makeKeyAndVisible];
+    [self initProject];
     return YES;
 }
+
+- (void)initProject{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [TabBarController new];
+    [self.window makeKeyAndVisible];
+    //启动页广告
+    [self launchAd];
+}
+
 #pragma mark - 启动页广告
 - (void)launchAd{
     //设置启动页广告图片的url
     NSString *imgUrlString =@"http://imgstore.cdn.sogou.com/app/a/100540002/714860.jpg";
     //初始化启动页广告(初始化后,自动添加至视图,不用手动添加)
-    JWLaunchAd *launchAd = [JWLaunchAd initImageWithURL:CGRectMake(0, 0, kScreen_Width, kScreen_Height-150) strUrl:imgUrlString adDuration:5.0 options:JWWebImageDefault result:^(UIImage *image, NSURL *url) {
+    JWLaunchAd *launchAd = [JWLaunchAd initImageWithURL:CGRectMake(0, 0, kScreen_Width, kScreen_Height-100) strUrl:imgUrlString adDuration:5.0 options:JWWebImageDefault result:^(UIImage *image, NSURL *url) {
     }];
     //是否隐藏跳过按钮（默认显示）
-    launchAd.hideSkip = NO;
+//    launchAd.hideSkip = YES;
     //广告点击事件
     launchAd.clickBlock = ^(){
         NSString *url = @"https://www.baidu.com";
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
     };
 }
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
