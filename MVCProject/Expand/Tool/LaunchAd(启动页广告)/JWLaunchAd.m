@@ -147,9 +147,7 @@
     }];
 }
 -(void)tapAction:(UITapGestureRecognizer *)tap{
-    if(self.clickBlock){
-        self.clickBlock();
-    }
+    if(self.clickBlock) self.clickBlock();
 }
 -(UIImage *)launchImage{
     CGSize viewSize = [UIScreen mainScreen].bounds.size;
