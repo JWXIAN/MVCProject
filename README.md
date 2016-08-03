@@ -7,8 +7,12 @@ MVC的项目框架，并集成一些常用的功能，持续更新添加一些�
 [![Bintray](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://github.com/JWXIAN/MVCProject)
 
 --
+项目结构
+-
+![image](https://github.com/JWXIAN/MVCProject/blob/master/Image/Class.png)
 
+-
 效果图
 ------------
-![image](https://github.com/JWXIAN/MVCProject/blob/master/shot.png)
-![image](https://github.com/JWXIAN/MVCProject/blob/master/a.gif)
+![image](https://github.com/JWXIAN/MVCProject/blob/master/Image/shot.png)
+![image](https://github.com/JWXIAN/MVCProject/blob/master/Image/a.gif)
