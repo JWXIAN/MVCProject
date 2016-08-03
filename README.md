@@ -9,7 +9,7 @@ MVC的项目框架，并集成一些常用的功能，持续更新添加一些�
 --
 项目结构
 -
-![image](https://github.com/JWXIAN/MVCProject/tree/master/Image/Class.png)
+![image](https://github.com/JWXIAN/MVCProject/blob/master/Image/Class.png)
 
 -
 效果图
