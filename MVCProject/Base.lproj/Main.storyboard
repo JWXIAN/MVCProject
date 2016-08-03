@@ -37,7 +37,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336" y="520"/>
+            <point key="canvasLocation" x="-366" y="769"/>
+        </scene>
+        <!--User CenterVC-->
+        <scene sceneID="PsP-OA-CWq">
+            <objects>
+                <viewController storyboardIdentifier="UserCenterVC" hidesBottomBarWhenPushed="YES" id="VgT-9p-TIn" customClass="UserCenterVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7FU-dS-dXU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q9i-Aw-acr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jes-Kb-DQ2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2aJ-y2-hFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="769"/>
         </scene>
     </scenes>
 </document>

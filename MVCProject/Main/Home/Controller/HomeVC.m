@@ -8,6 +8,7 @@
 
 #import "HomeVC.h"
 #import "HomeCell.h"
+#import "UserCenterVC.h"
 
 @interface HomeVC ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -22,7 +23,6 @@
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(leftClick)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(rightClick)];
-    
     [self ldTableView];
 }
 - (void)didReceiveMemoryWarning {
@@ -48,7 +48,12 @@
     cell.lblDetail.text = indexPath.row%2?@"欣赏和喜欢你拥有的东西，而不是你没有的东西，你才能快乐。":@"一个人把情感统统拿出来，就像把钱统统败光了一样得不到人家怜悯。";
     return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UserCenterVC *userCenter = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"UserCenterVC"];
+    [self.navigationController pushViewController:userCenter animated:YES];
+}
 
+#pragma mark - 隐藏顶部导航
 float lastContentOffset;
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     lastContentOffset = scrollView.contentOffset.y;
@@ -59,5 +64,9 @@ float lastContentOffset;
     }else{
         [super.navigationController setNavigationBarHidden:NO animated:true];
     }
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:YES];
+    self.navigationController.hidesBottomBarWhenPushed=YES;
 }
 @end

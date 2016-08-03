@@ -11,11 +11,11 @@
 @interface NavigationController ()
 @end
 
-#define kBarTintColor   [UIColor whiteColor]
-#define kTintColor      [UIColor grayColor]
-#define kTitleColor     [UIColor whiteColor]
-#define kItemTextColor  [UIColor grayColor]
-#define kItemTextFont   13
+#define kBarTintColor   [UIColor whiteColor]    //导航背景色
+#define kTintColor      [UIColor grayColor]    //字体颜色
+#define kTitleColor     [UIColor whiteColor]    //按钮颜色
+#define kBarItemTextColor  [UIColor whiteColor] //字体颜色
+#define kBarItemTextFont   13                   //字体大小
 @implementation NavigationController
 
 - (void)viewDidLoad {
@@ -25,6 +25,8 @@
     textAttrs[NSForegroundColorAttributeName] = kTitleColor;
     self.navigationBar.titleTextAttributes = textAttrs;
     self.navigationBar.tintColor = kTintColor;
+    //导航栏的背景色是黑色, 字体为白色
+    self.navigationBar.barStyle = UIBarStyleDefault;
     //将返回按钮的文字position设置不在屏幕上显示
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin) forBarMetrics:UIBarMetricsDefault];
 }
@@ -32,17 +34,16 @@
     [super didReceiveMemoryWarning];
 }
 + (void)initialize{
-    
     // 设置整个项目所有item的主题样式
     UIBarButtonItem *item = [UIBarButtonItem appearance];
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
-    textAttrs[NSForegroundColorAttributeName] = kItemTextColor;
-    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:kItemTextFont];
+    textAttrs[NSForegroundColorAttributeName] = kBarItemTextColor;
+    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:kBarItemTextFont];
     [item setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     // 设置不可用状态
     NSMutableDictionary *disableTextAttrs = [NSMutableDictionary dictionary];
-    disableTextAttrs[NSForegroundColorAttributeName] = kItemTextColor;
-    disableTextAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:kItemTextFont];
+    disableTextAttrs[NSForegroundColorAttributeName] = kBarItemTextColor;
+    disableTextAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:kBarItemTextFont];
     [item setTitleTextAttributes:disableTextAttrs forState:UIControlStateDisabled];
 }
 /**

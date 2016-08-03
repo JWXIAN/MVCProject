@@ -189,6 +189,11 @@
 		7FD3F1FC1D4217A700B46D34 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F1FB1D4217A700B46D34 /* HomeVC.m */; };
 		7FD3F2031D42198200B46D34 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3F2011D42198200B46D34 /* HomeCell.m */; };
 		7FD3F2041D42198200B46D34 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD3F2021D42198200B46D34 /* HomeCell.xib */; };
+		7FDFD7261D49AB14008B3590 /* UserCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD7231D49AB14008B3590 /* UserCenterVC.m */; };
+		7FDFD72A1D49AC65008B3590 /* UserCenterInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD7281D49AC65008B3590 /* UserCenterInfoCell.m */; };
+		7FDFD72B1D49AC65008B3590 /* UserCenterInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FDFD7291D49AC65008B3590 /* UserCenterInfoCell.xib */; };
+		7FDFD72E1D49AF32008B3590 /* UserCenterGiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD72D1D49AF32008B3590 /* UserCenterGiftCell.m */; };
+		7FDFD7311D49DB4E008B3590 /* UserCenterHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD7301D49DB4E008B3590 /* UserCenterHeadCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -575,6 +580,15 @@
 		7FD3F2001D42198200B46D34 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
 		7FD3F2011D42198200B46D34 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
 		7FD3F2021D42198200B46D34 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		7FDFD7221D49AB14008B3590 /* UserCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterVC.h; sourceTree = "<group>"; };
+		7FDFD7231D49AB14008B3590 /* UserCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterVC.m; sourceTree = "<group>"; };
+		7FDFD7271D49AC65008B3590 /* UserCenterInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterInfoCell.h; sourceTree = "<group>"; };
+		7FDFD7281D49AC65008B3590 /* UserCenterInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterInfoCell.m; sourceTree = "<group>"; };
+		7FDFD7291D49AC65008B3590 /* UserCenterInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCenterInfoCell.xib; sourceTree = "<group>"; };
+		7FDFD72C1D49AF32008B3590 /* UserCenterGiftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterGiftCell.h; sourceTree = "<group>"; };
+		7FDFD72D1D49AF32008B3590 /* UserCenterGiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterGiftCell.m; sourceTree = "<group>"; };
+		7FDFD72F1D49DB4E008B3590 /* UserCenterHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterHeadCell.h; sourceTree = "<group>"; };
+		7FDFD7301D49DB4E008B3590 /* UserCenterHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterHeadCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -667,6 +681,7 @@
 		7FA0CC8A1D3F61D20004919A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7FDFD71D1D49AA77008B3590 /* UserCenter */,
 				7FA0CC931D3F64410004919A /* Home */,
 				7FA0CC941D3F64410004919A /* Login */,
 				7FA0CC921D3F64220004919A /* Base */,
@@ -1470,6 +1485,46 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7FDFD71D1D49AA77008B3590 /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				7FDFD7211D49AB14008B3590 /* Controller */,
+				7FDFD7241D49AB14008B3590 /* Model */,
+				7FDFD7251D49AB14008B3590 /* View */,
+			);
+			path = UserCenter;
+			sourceTree = "<group>";
+		};
+		7FDFD7211D49AB14008B3590 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FDFD7221D49AB14008B3590 /* UserCenterVC.h */,
+				7FDFD7231D49AB14008B3590 /* UserCenterVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7FDFD7241D49AB14008B3590 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FDFD7251D49AB14008B3590 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FDFD7271D49AC65008B3590 /* UserCenterInfoCell.h */,
+				7FDFD7281D49AC65008B3590 /* UserCenterInfoCell.m */,
+				7FDFD7291D49AC65008B3590 /* UserCenterInfoCell.xib */,
+				7FDFD72C1D49AF32008B3590 /* UserCenterGiftCell.h */,
+				7FDFD72D1D49AF32008B3590 /* UserCenterGiftCell.m */,
+				7FDFD72F1D49DB4E008B3590 /* UserCenterHeadCell.h */,
+				7FDFD7301D49DB4E008B3590 /* UserCenterHeadCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1577,6 +1632,7 @@
 				7FA0CC671D3F5F2F0004919A /* LaunchScreen.storyboard in Resources */,
 				7FA0CC641D3F5F2F0004919A /* Assets.xcassets in Resources */,
 				7FD3F2041D42198200B46D34 /* HomeCell.xib in Resources */,
+				7FDFD72B1D49AC65008B3590 /* UserCenterInfoCell.xib in Resources */,
 				7FA0CC621D3F5F2F0004919A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1609,6 +1665,7 @@
 				7FD3F0EE1D41C30700B46D34 /* UIButton+Indicator.m in Sources */,
 				7FD3F0E11D41C30700B46D34 /* UIApplication+ApplicationSize.m in Sources */,
 				7FD3F1291D41C30700B46D34 /* UIScrollView+Pages.m in Sources */,
+				7FDFD72E1D49AF32008B3590 /* UserCenterGiftCell.m in Sources */,
 				7FD3F1071D41C30700B46D34 /* UIImage+Merge.m in Sources */,
 				7FD3F0E61D41C30700B46D34 /* UIBezierPath+BasicShapes.m in Sources */,
 				7FD3F1E01D41C63A00B46D34 /* NSObject+AppInfo.m in Sources */,
@@ -1697,6 +1754,7 @@
 				7FD3F1A91D41C58600B46D34 /* NSString+Hash.m in Sources */,
 				7FD3F1451D41C30700B46D34 /* UIView+Recursion.m in Sources */,
 				7FD3F0E21D41C30700B46D34 /* UIApplication+KeyboardFrame.m in Sources */,
+				7FDFD72A1D49AC65008B3590 /* UserCenterInfoCell.m in Sources */,
 				7FD3F1B31D41C58600B46D34 /* NSString+UrlEncode.m in Sources */,
 				7FD3F1571D41C30700B46D34 /* UIWebView+JS.m in Sources */,
 				7FD3F1C21D41C5B800B46D34 /* NSURL+Param.m in Sources */,
@@ -1757,6 +1815,7 @@
 				7FD3F1321D41C30700B46D34 /* UITableViewCell+TS_delaysContentTouches.m in Sources */,
 				7FD3F10D1D41C30700B46D34 /* UIImage+Vector.m in Sources */,
 				7FD3F1491D41C30700B46D34 /* UIView+ViewController.m in Sources */,
+				7FDFD7261D49AB14008B3590 /* UserCenterVC.m in Sources */,
 				7FD3F1BC1D41C5A100B46D34 /* NSTimer+Blocks.m in Sources */,
 				7FD3F13E1D41C30700B46D34 /* UIView+Debug.m in Sources */,
 				7FD3F1581D41C30700B46D34 /* UIWebView+Load.m in Sources */,
@@ -1776,6 +1835,7 @@
 				7FD3F1401D41C30700B46D34 /* UIView+FDCollapsibleConstraints.m in Sources */,
 				7FD3F1141D41C30700B46D34 /* UILabel+AutomaticWriting.m in Sources */,
 				7FD3F1001D41C30700B46D34 /* UIImage+BetterFace.m in Sources */,
+				7FDFD7311D49DB4E008B3590 /* UserCenterHeadCell.m in Sources */,
 				7FD3F0E41D41C30700B46D34 /* UIApplication+Permissions.m in Sources */,
 				7FD3F15C1D41C30700B46D34 /* WebView+Debug.m in Sources */,
 			);
