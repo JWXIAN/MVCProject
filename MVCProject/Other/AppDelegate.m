@@ -30,18 +30,20 @@
 
 #pragma mark - 启动页广告
 - (void)launchAd{
-    //设置启动页广告图片的url
+    //1.设置启动页广告图片的url
     NSString *imgUrlString =@"http://imgstore.cdn.sogou.com/app/a/100540002/714860.jpg";
-    //初始化启动页广告(初始化后,自动添加至视图,不用手动添加)
-    JWLaunchAd *launchAd = [JWLaunchAd initImageWithURL:CGRectMake(0, 0, kScreen_Width, kScreen_Height-100) strUrl:imgUrlString adDuration:5.0 options:JWWebImageDefault result:^(UIImage *image, NSURL *url) {
+    //2.初始化启动页广告(初始化后,自动添加至视图,不用手动添加)
+    [JWLaunchAd initImageWithAttribute:5.0 hideSkip:NO setLaunchAd:^(JWLaunchAd *launchAd) {
+        __block JWLaunchAd *weakSelf = launchAd;
+        [launchAd setWebImageWithURL:imgUrlString options:JWWebImageDefault result:^(UIImage *image, NSURL *url) {
+            //3.异步加载图片完成回调(设置图片尺寸)
+            weakSelf.adFrame = CGRectMake(0, 0, kScreen_Width, kScreen_Height-150);
+        } adClickBlock:^{
+            //4.点击广告回调
+            NSString *url = @"https://www.baidu.com";
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+        }];
     }];
-    //是否隐藏跳过按钮（默认显示）
-//    launchAd.hideSkip = YES;
-    //广告点击事件
-    launchAd.clickBlock = ^(){
-        NSString *url = @"https://www.baidu.com";
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
-    };
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
