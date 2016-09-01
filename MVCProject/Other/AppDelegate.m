@@ -37,7 +37,7 @@
         __block JWLaunchAd *weakSelf = launchAd;
         [launchAd setWebImageWithURL:imgUrlString options:JWWebImageDefault result:^(UIImage *image, NSURL *url) {
             //3.异步加载图片完成回调(设置图片尺寸)
-            weakSelf.adFrame = CGRectMake(0, 0, kScreen_Width, kScreen_Height-150);
+            weakSelf.launchAdViewFrame = CGRectMake(0, 0, kScreen_Width, kScreen_Height-150);
         } adClickBlock:^{
             //4.点击广告回调
             NSString *url = @"https://www.baidu.com";
