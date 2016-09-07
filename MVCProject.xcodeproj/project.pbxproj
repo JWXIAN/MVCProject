@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F5FF2B91D7833AF002A5E1F /* JWLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5FF2B81D7833AF002A5E1F /* JWLaunchAd.m */; };
 		7F6C2E081D45BC660045728B /* UIImageView+JWWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C2E071D45BC660045728B /* UIImageView+JWWebCache.m */; };
 		7FA0CC591D3F5F2F0004919A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0CC581D3F5F2F0004919A /* main.m */; };
 		7FA0CC621D3F5F2F0004919A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA0CC601D3F5F2F0004919A /* Main.storyboard */; };
@@ -194,6 +193,7 @@
 		7FDFD72B1D49AC65008B3590 /* UserCenterInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FDFD7291D49AC65008B3590 /* UserCenterInfoCell.xib */; };
 		7FDFD72E1D49AF32008B3590 /* UserCenterGiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD72D1D49AF32008B3590 /* UserCenterGiftCell.m */; };
 		7FDFD7311D49DB4E008B3590 /* UserCenterHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD7301D49DB4E008B3590 /* UserCenterHeadCell.m */; };
+		7FF8D4261D7FB9210021519C /* JWLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF8D4251D7FB9210021519C /* JWLaunchAd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,8 +214,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7F5FF2B71D7833AF002A5E1F /* JWLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWLaunchAd.h; sourceTree = "<group>"; };
-		7F5FF2B81D7833AF002A5E1F /* JWLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLaunchAd.m; sourceTree = "<group>"; };
 		7F6C2E061D45BC660045728B /* UIImageView+JWWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JWWebCache.h"; sourceTree = "<group>"; };
 		7F6C2E071D45BC660045728B /* UIImageView+JWWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JWWebCache.m"; sourceTree = "<group>"; };
 		7FA0CC541D3F5F2F0004919A /* MVCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -589,6 +587,8 @@
 		7FDFD72D1D49AF32008B3590 /* UserCenterGiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterGiftCell.m; sourceTree = "<group>"; };
 		7FDFD72F1D49DB4E008B3590 /* UserCenterHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterHeadCell.h; sourceTree = "<group>"; };
 		7FDFD7301D49DB4E008B3590 /* UserCenterHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterHeadCell.m; sourceTree = "<group>"; };
+		7FF8D4241D7FB9210021519C /* JWLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWLaunchAd.h; sourceTree = "<group>"; };
+		7FF8D4251D7FB9210021519C /* JWLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWLaunchAd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1445,8 +1445,8 @@
 		7FD3F1EB1D4203A100B46D34 /* LaunchAd(启动页广告) */ = {
 			isa = PBXGroup;
 			children = (
-				7F5FF2B71D7833AF002A5E1F /* JWLaunchAd.h */,
-				7F5FF2B81D7833AF002A5E1F /* JWLaunchAd.m */,
+				7FF8D4241D7FB9210021519C /* JWLaunchAd.h */,
+				7FF8D4251D7FB9210021519C /* JWLaunchAd.m */,
 			);
 			path = "LaunchAd(启动页广告)";
 			sourceTree = "<group>";
@@ -1670,7 +1670,7 @@
 				7FD3F0E61D41C30700B46D34 /* UIBezierPath+BasicShapes.m in Sources */,
 				7FD3F1E01D41C63A00B46D34 /* NSObject+AppInfo.m in Sources */,
 				7FD3F0FC1D41C30700B46D34 /* UIFont+WDCustomLoader.m in Sources */,
-				7F5FF2B91D7833AF002A5E1F /* JWLaunchAd.m in Sources */,
+				7FF8D4261D7FB9210021519C /* JWLaunchAd.m in Sources */,
 				7FD3F1AB1D41C58600B46D34 /* NSString+MIME.m in Sources */,
 				7FD3F0F71D41C30700B46D34 /* UIControl+ActionBlocks.m in Sources */,
 				7F6C2E081D45BC660045728B /* UIImageView+JWWebCache.m in Sources */,

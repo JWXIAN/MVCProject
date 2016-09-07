@@ -31,17 +31,24 @@
 typedef void (^JWLaunchAdClickBlock)();
 typedef void (^JWSetLaunchAdBlock)(JWLaunchAd *launchAd);
 
+typedef NS_ENUM(NSUInteger, SkipShowType)
+{
+    SkipShowTypeNone = 0,       /** 无跳过 */
+    SkipShowTypeDefault,        /** 跳过+倒计时*/
+    SkipShowTypeAnimation,      /** 动画跳过 ⭕️ */
+};
+
 @interface JWLaunchAd : UIView
 
 /**
  *  广告图
  */
-@property(strong, nonatomic) UIImageView *launchAdImgView;
+@property(nonatomic, strong) UIImageView *launchAdImgView;
 
 /**
  *  广告frame
  */
-@property (assign, nonatomic) CGRect launchAdViewFrame;
+@property (nonatomic, assign) CGRect launchAdViewFrame;
 
 /**
  *  清理缓冲
@@ -57,7 +64,7 @@ typedef void (^JWSetLaunchAdBlock)(JWLaunchAd *launchAd);
  *
  *  @return self
  */
-+ (instancetype)initImageWithAttribute:(NSInteger)adDuration hideSkip:(BOOL)hideSkip setLaunchAd:(JWSetLaunchAdBlock)setLaunchAd;
++ (instancetype)initImageWithAttribute:(NSInteger)adDuration showSkipType:(SkipShowType)showSkipType setLaunchAd:(JWSetLaunchAdBlock)setLaunchAd;
 
 /**
  *  设置图片
@@ -69,4 +76,13 @@ typedef void (^JWSetLaunchAdBlock)(JWLaunchAd *launchAd);
  */
 - (void)setWebImageWithURL:(NSString *)strURL options:(JWWebImageOptions)options result:(JWWebImageCompletionBlock)result adClickBlock:(JWLaunchAdClickBlock)adClickBlock;
 
+/**
+ *  设置动画跳过属性
+ *
+ *  @param strokeColor     转动颜色
+ *  @param lineWidth       宽度
+ *  @param backgroundColor 背景色
+ *  @param textColor       字体颜色
+ */
+- (void)setAnimationSkipWithAttribute:(UIColor *)strokeColor lineWidth:(NSInteger)lineWidth backgroundColor:(UIColor *)backgroundColor textColor:(UIColor *)textColor;
 @end

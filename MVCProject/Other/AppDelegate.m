@@ -33,8 +33,9 @@
     //1.设置启动页广告图片的url
     NSString *imgUrlString =@"http://imgstore.cdn.sogou.com/app/a/100540002/714860.jpg";
     //2.初始化启动页广告(初始化后,自动添加至视图,不用手动添加)
-    [JWLaunchAd initImageWithAttribute:5.0 hideSkip:NO setLaunchAd:^(JWLaunchAd *launchAd) {
+    [JWLaunchAd initImageWithAttribute:5.0 showSkipType:SkipShowTypeAnimation setLaunchAd:^(JWLaunchAd *launchAd) {
         __block JWLaunchAd *weakSelf = launchAd;
+        [weakSelf setAnimationSkipWithAttribute:[UIColor redColor] lineWidth:3.0 backgroundColor:nil textColor:nil];
         [launchAd setWebImageWithURL:imgUrlString options:JWWebImageDefault result:^(UIImage *image, NSURL *url) {
             //3.异步加载图片完成回调(设置图片尺寸)
             weakSelf.launchAdViewFrame = CGRectMake(0, 0, kScreen_Width, kScreen_Height-150);
